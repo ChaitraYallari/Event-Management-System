@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Stream</title>
+    <!-- Add your CSS and JavaScript links here -->
+</head>
+<body>
+    <h1>{{ event.title }}</h1>
+    
+    <div>
+        <!-- Embed the live stream video player here -->
+        <video id="live-stream-player" controls>
+            <source src="{{ live_stream.stream_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div>
+        <!-- Add a simple chat interface using WebSockets or another real-time technology -->
+        <h2>Live Chat</h2>
+        <div id="chat-messages">
+            <!-- Chat messages will be dynamically added here -->
+        </div>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+
+    <!-- Include your JavaScript code for WebSocket integration and chat functionality -->
+</body>
+</html>

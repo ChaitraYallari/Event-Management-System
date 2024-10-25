@@ -1,0 +1,41 @@
+{% extends 'Administrator/administrator_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>Admin</title>
+{% endblock %}
+
+{% block loadcss %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Administrator/administrator_dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="main">
+    <p id="demo">,</p>
+
+    <div>,Admin</div><br><br>
+   
+
+    
+   
+</div>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+
+
+{% endblock %}
